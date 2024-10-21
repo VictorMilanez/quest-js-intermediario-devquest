@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest HTML - CSS - JS INTERMEDIÁRIO</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="formulario">
+
+        <div class="textos">
+            <ul class="itens">
+                <li class="mensagem">
+
+                    <h2 class="titulo">FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h2>
+
+                    <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                        contato em
+                        menos de 2h.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <form class="dados">
+
+            <input class="input nome" id="input nome" name="nome" type="text" placeholder="Nome Completo *">
+            <p class="texto-obrigatorio opacidade">campo obrigatório</p>
+
+            <input class="input email" id="input email" name="email" type="text" placeholder="Email *">
+            <p class="texto-obrigatorio opacidade">campo obrigatório</p>
+
+
+            <input class="input telefone" id="input telefone" name="telefone" type="text" placeholder="Telefone *">
+            <p class="texto-obrigatorio opacidade">campo obrigatório</p>
+
+
+            <textarea class="input mensagem" id="input mensagem" name="mensagem"  placeholder="Mensagem *"></textarea>
+            <p class="texto-obrigatorio opacidade">campo obrigatório</p>
+
+
+            <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+            <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
+
+        </form>
+
+    </section>
+
+    
+        <script type="text/javascript" src="/src/js/painel.js"></script>
+</body>
+
+</html>

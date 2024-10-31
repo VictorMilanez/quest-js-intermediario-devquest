@@ -1,0 +1,34 @@
+@media (max-width: 890px){
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formulario .textos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .formulario .dados{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 340px){
+    .dados .input{
+        max-width: 100%;
+    }
+    .formulario .dados{
+        width: 90%;
+    }
+    
+    .dados .btn-enviar{
+        width: 100%;
+    }
+}

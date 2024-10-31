@@ -1,35 +1,21 @@
 const inputsText = document.querySelectorAll('.input')
-const camposObrigatorios = document.querySelectorAll('.texto-obrigatorio')
 const botaoEnviar = document.getElementById('btn-enviar')
 
 
-botaoEnviar.addEventListener('click', ()=>{
-    inputsPreenchidos();
+botaoEnviar.addEventListener('click', (event)=>{
+    event.preventDefault()
 
-    inputsNaoPreenchidos();
+    inputsText.forEach((input)=>{
+        if(input.value){
+            input.classList.add('preenchido')
+            input.nextElementSibling.classList.add('opacidade')
+        } else {
+            input.classList.remove('preenchido')
+            input.classList.add('nao-preenchido')
+            input.nextElementSibling.classList.remove('opacidade')
+        }
+    })
 
 })
 
-function inputsPreenchidos(){
-    inputsText.forEach(input => {
-        const inputsEstaoPreenchidos = input.value !== ""
-        if(inputsEstaoPreenchidos){
-            input.classList.add('preenchido')
-        } else {
-            input.classList.remove('preenchido')
-        }
-    });
-}
-
-function inputsNaoPreenchidos(){
-    inputsText.forEach((input, indice) => {
-        const inputsNaoPreenchidos = input.value === ""
-        if(inputsNaoPreenchidos){
-            input.classList.add('nao-preenchido')
-            camposObrigatorios[indice].classList.remove('opacidade')
-        } else {
-            camposObrigatorios[indice].classList.add('opacidade')
-        }
-    });
-}
 
